@@ -168,8 +168,8 @@ export default [
     ratings: 5,
     images: [
       {
-        public_id: "Rabbit/8843629d8fac97981894c5a00",
-        url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705346756/Rabbit/8843629d8fac97981894c5a00.jpg",
+        public_id: "Rabbit/products/mkfn3qvzmyv1kf6rt6dd",
+        url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705325108/Rabbit/products/mkfn3qvzmyv1kf6rt6dd.jpg",
       },
      
     ],
@@ -206,8 +206,8 @@ export default [
     ratings: 4.9,
     images: [
       {
-        public_id: "Rabbit/65405840e7903891ffd2e7d01",
-        url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705385321/Rabbit/65405840e7903891ffd2e7d01.jpg",
+        public_id: "Rabbit/products/cherry_f4gkmd.webp",
+        url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1710380829/Rabbit/products/cherry_f4gkmd.webp",
       },
       
     ],
@@ -225,8 +225,8 @@ export default [
     ratings: 4.9,
     images: [
       {
-        public_id: "Rabbit/1c826761cbb4fdcecc91f2800",
-        url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705400451/Rabbit/1c826761cbb4fdcecc91f2800.jpg",
+        public_id: "Rabbit/products/milk_jifffx.avif",
+        url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1710380830/Rabbit/products/milk_jifffx.avif",
       },
      
     ],
@@ -237,4 +237,86 @@ export default [
     reviews: [],
   },
   
+
+
+{
+  name: "BlueBerries",
+  price: 64,
+  description:
+    "Enriched with high vitamins and protiens",
+  ratings: 4.9,
+  images: [
+    {
+      public_id: "Rabbit/products/f0yritywkejzqrxrnnk0",
+      url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705325109/Rabbit/products/f0yritywkejzqrxrnnk0.jpg",
+    },
+   
+  ],
+  category: "Fruits",
+  seller: "Farmer from vijayawada",
+  stock: 0,
+  numOfReviews: 56,
+  reviews: [],
+},
+
+{
+  name: "Cabbage",
+  price: 64,
+  description:
+    "Fresh and Leafy",
+  ratings: 4.9,
+  images: [
+    {
+      public_id: "Rabbit/products/cabbage_aq1xha",
+      url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1710380829/Rabbit/products/cabbage_aq1xha.jpg",
+    },
+   
+  ],
+  category: "Vegetables",
+  seller: "Farmer from vijayawada",
+  stock: 0,
+  numOfReviews: 63,
+  reviews: [],
+},
+
+{
+  name: "Avacado",
+  price: 64,
+  description:
+    "Fresh and delightful",
+  ratings: 4.9,
+  images: [
+    {
+      public_id: "Rabbit/products/Chow-Chow-2-2_swjyq0",
+      url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705244915/Rabbit/products/Chow-Chow-2-2_swjyq0.jpg",
+    },
+   
+  ],
+  category: "Fruits",
+  seller: "Farmer from vijayawada",
+  stock: 0,
+  numOfReviews: 56,
+  reviews: [],
+},
+
+{
+  name: "Onions",
+  price: 64,
+  description:
+    "Fresh ",
+  ratings: 4.9,
+  images: [
+    {
+      public_id: "Rabbit/products/fresh-indian-red-onion-vegetables-single-isolated-on-table-with-green-nature-trees-background-raw-unpeeled-red-onions-vegetables-2G9RE32_agzaum",
+      url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705244914/Rabbit/products/fresh-indian-red-onion-vegetables-single-isolated-on-table-with-green-nature-trees-background-raw-unpeeled-red-onions-vegetables-2G9RE32_agzaum.jpg",
+    },
+   
+  ],
+  category: "Vegetables",
+  seller: "Farmer from vijayawada",
+  stock: 0,
+  numOfReviews: 56,
+  reviews: [],
+},
+
 ];

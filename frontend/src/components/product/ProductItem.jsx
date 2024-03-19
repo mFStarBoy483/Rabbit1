@@ -18,7 +18,7 @@ const ProductItem = ({ product, columnSize }) => {
             <Link to={`/product/${product?._id}`}>{product?.name}</Link>
           </h5>
           <StarRatings
-            rating={product?.rating}
+            rating={product?.ratings}
             starRatedColor="#ffb829"
             numberOfStars={5}
             name="rating"

@@ -16,7 +16,7 @@ export const authApi = createApi({
       async onQueryStarted(args, { dispatch, queryFulfilled }) {
         try {
           await queryFulfilled;
-          await dispatch(userApi.endpoints.getMe.mutation.initiate(null));
+          await dispatch(userApi.endpoints.getMe.initiate(null));
         } catch (error) {
           console.error("Error in register mutation:", error);
         }
@@ -33,7 +33,7 @@ export const authApi = createApi({
       async onQueryStarted(args, { dispatch, queryFulfilled }) {
         try {
           await queryFulfilled;
-          await dispatch(userApi.endpoints.getMe.mutation.initiate(null));
+          await dispatch(userApi.endpoints.getMe.initiate(null));
         } catch (error) {
           console.error("Error in login mutation:", error);
         }

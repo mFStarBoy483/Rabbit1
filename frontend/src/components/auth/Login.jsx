@@ -17,14 +17,13 @@ const Login = () => {
     console.log("isAuthenticated:", isAuthenticated);
 
     if (isAuthenticated) {
-      console.log("Navigating to /");
       navigate("/");
     }
 
     if (error) {
       toast.error(error?.data?.message);
     }
-  }, [error, isAuthenticated, navigate]);
+  }, [error, isAuthenticated]);
 
   const submitHandler = (e) => {
     e.preventDefault();

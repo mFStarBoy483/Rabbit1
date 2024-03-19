@@ -17,16 +17,21 @@ const Register = () => {
     const [register, { isLoading, error, data }] = useRegisterMutation();
 
 
-    const {isAuthenticated } = useSelector((state) => state.auth)
 
-  useEffect(() => {
-    if(isAuthenticated){
-      navigate("/")
-    }
-    if (error) {
-      toast.error(error?.data?.message);
-    }
-  }, [error,isAuthenticated]);
+    const { isAuthenticated } = useSelector((state) => state.auth);
+
+    useEffect(() => {
+      console.log("isAuthenticated:", isAuthenticated);
+  
+      if (isAuthenticated) {
+        console.log("Navigating to /");
+        navigate("/");
+      }
+  
+      if (error) {
+        toast.error(error?.data?.message);
+      }
+    }, [error, isAuthenticated, navigate]);
 
     const submitHandler = (e) => {
         e.preventDefault();
