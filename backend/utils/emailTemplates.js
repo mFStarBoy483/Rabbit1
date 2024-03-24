@@ -504,11 +504,11 @@ export const getResetPasswordTemplate = (username, resetUrl) =>`
                               >
                                 <tr>
                                   <td align="center">
-                                    <a${resetUrl}"
-                                      class="f-fallback button button--green"
-                                      target="_blank"
-                                      >Reset your password</a
-                                    >
+                                  <a
+                                  href="${resetUrl}"
+                                  class="f-fallback button button--green"
+                                  target="_blank"
+                              >Reset your password</a>
                                   </td>
                                 </tr>
                               </table>

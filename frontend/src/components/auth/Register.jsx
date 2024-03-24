@@ -3,6 +3,7 @@ import { useRegisterMutation } from '../../redux/api/authApi';
 import toast from 'react-hot-toast';
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import MetaData from "../layout/MetaData";
 
 const Register = () => {
     const [user, setUser] = useState({
@@ -46,6 +47,8 @@ const Register = () => {
             setUser({ ...user, [e.target.name]: e.target.value});
             };
   return (
+    <>
+    <MetaData title={"Register"} />
     <div className="row wrapper">
       <div className="col-10 col-lg-5">
         <form
@@ -99,6 +102,7 @@ const Register = () => {
         </form>
       </div>
     </div>
+    </>
   )
 }
 
