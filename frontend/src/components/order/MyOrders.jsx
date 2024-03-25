@@ -14,7 +14,9 @@ const MyOrders = () => {
     const [searchParams] = useSearchParams();  
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const orderSuccess = searchParams.get("order_success");
+    const orderSuccess = searchParams.get("order_sucess");
+
+    console.log(orderSuccess)
 
     useEffect(() => {
         if (error) {

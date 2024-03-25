@@ -4,7 +4,6 @@ import MetaData from "../layout/MetaData";
 import { useOrderDetailsQuery } from "../../redux/api/orderApi";
 import Loader from "../layout/Loader";
 import { toast } from "react-hot-toast";
-import PaymentMethod from './../cart/PaymentMethod';
 
 const OrderDetails = () => {
   const params = useParams()
@@ -12,7 +11,7 @@ const {data, isLoading, error} = useOrderDetailsQuery (params?.id);
 const order = data?.order || {}
 const {shippingInfo, orderItems, paymentInfo, user, totalAmount, orderStatus} = order
 
-const isPaid = paymentInfo?.status == "paid"? true: false
+const isPaid = paymentInfo?.status === "paid"? true: false;
 
 useEffect(() => {
   if (error) {
