@@ -33,7 +33,7 @@ const PaymentMethod = () => {
         toast.error(error?.data?.message);
         }
         if (isSuccess) {
-        navigate("/")
+        navigate("/me/orders?order_sucess=true")
         }
         }, [error, isSuccess]);
 
