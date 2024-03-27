@@ -7,15 +7,15 @@ export default [
     ratings: 4.5,
     images: [
       {
-        public_id: "Rabbit/dfca9266e47f308760edbf900",
-        url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1708578451/Rabbit/dfca9266e47f308760edbf900.webp",
+        public_id: "Rabbit/products/edfe7e1b612abb09d51697502",
+        url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1708575504/Rabbit/products/edfe7e1b612abb09d51697502.jpg",
       },
       {
-        public_id: "Rabbit/edfe7e1b612abb09d51697501",
+        public_id: "Rabbit/products/edfe7e1b612abb09d51697501",
         url:"https://res.cloudinary.com/do9lunhhd/image/upload/v1708575413/Rabbit/edfe7e1b612abb09d51697501.jpg",
       },
       {
-        public_id: "Rabbit/edfe7e1b612abb09d51697502",
+        public_id: "Rabbit/products/edfe7e1b612abb09d51697502",
         url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1708575504/Rabbit/edfe7e1b612abb09d51697502.jpg",
       },
     ],
@@ -33,7 +33,7 @@ export default [
     ratings: 1.65,
     images: [
       {
-        public_id: "Rabbit/66a88385ff753f0ede02a8701",
+        public_id: "Rabbit/products/66a88385ff753f0ede02a8701",
         url: " https://res.cloudinary.com/do9lunhhd/image/upload/v1705346047/Rabbit/66a88385ff753f0ede02a8701.jpg",
       },
       
@@ -52,7 +52,7 @@ export default [
     ratings: 3.5,
     images: [
       {
-        public_id: "Rabbit/72f0226c51f85e2055f395600",
+        public_id: "Rabbit/products/72f0226c51f85e2055f395600",
         url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705346198/Rabbit/72f0226c51f85e2055f395600.jpg",
       },
      
@@ -71,7 +71,7 @@ export default [
     ratings: 4.5,
     images: [
       {
-        public_id: "Rabbit/4ff8afcc480d895831052d900",
+        public_id: "Rabbit/products/4ff8afcc480d895831052d900",
         url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705346297/Rabbit/4ff8afcc480d895831052d900.jpg",
       },
       {
@@ -93,7 +93,7 @@ export default [
     ratings: 4.8,
     images: [
       {
-        public_id: "Rabbit/215e0f74e3438ad6a55093c00",
+        public_id: "Rabbit/products/215e0f74e3438ad6a55093c00",
         url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705346380/Rabbit/215e0f74e3438ad6a55093c00.jpg",
       },
      
@@ -112,7 +112,7 @@ export default [
     ratings: 4.1,
     images: [
       {
-        public_id: "Rabbit/b8c8cd78ec6637b9a143d9d00",
+        public_id: "Rabbit/products/b8c8cd78ec6637b9a143d9d00",
         url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705346480/Rabbit/b8c8cd78ec6637b9a143d9d00.jpg",
       },
     ],
@@ -130,7 +130,7 @@ export default [
     ratings: 4.7,
     images: [
       {
-        public_id: "Rabbit/6185fd2357789d66431cf0600",
+        public_id: "Rabbit/products/6185fd2357789d66431cf0600",
         url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705346564/Rabbit/6185fd2357789d66431cf0600.jpg",
       },
      
@@ -149,7 +149,7 @@ export default [
     ratings: 4.9,
     images: [
       {
-        public_id: "Rabbit/2c4839be8c8a106de9b73bc00",
+        public_id: "Rabbit/products/2c4839be8c8a106de9b73bc00",
         url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705346667/Rabbit/2c4839be8c8a106de9b73bc00.jpg",
       },
      
@@ -187,7 +187,7 @@ export default [
     ratings: 4.9,
     images: [
       {
-        public_id: "Rabbit/65405840e7903891ffd2e7d00",
+        public_id: "Rabbit/products/65405840e7903891ffd2e7d00",
         url: "https://res.cloudinary.com/do9lunhhd/image/upload/v1705384177/Rabbit/65405840e7903891ffd2e7d00.jpg",
       },
      

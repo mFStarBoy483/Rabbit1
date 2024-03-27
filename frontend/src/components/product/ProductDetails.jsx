@@ -111,7 +111,7 @@ const setItemToCart = () => {
 
       <div className="d-flex">
       <StarRatings
-            rating={product?.rating}
+            rating={product?.ratings}
             starRatedColor="#ffb829"
             numberOfStars={5}
             name="rating"
@@ -120,7 +120,7 @@ const setItemToCart = () => {
           />
         <span id="no-of-reviews" className="pt-1 ps-2">
             {" "}
-        ({product?.numOfReviews} Reviews) {""}
+        ({product?.numofReviews} Reviews) {""}
         </span>
       </div>
       <hr />

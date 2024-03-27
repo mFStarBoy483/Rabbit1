@@ -3,6 +3,7 @@ import Product from "../models/product.js" ;
 import Order from "../models/order.js";
 import APIFilters from "../utils/apiFilters.js";
 import ErrorHandler from "../utils/errorHandler.js";
+import {delete_file, upload_file} from '../utils/cloudinary.js';
 
 
 
@@ -61,11 +62,53 @@ export const getProductDetails = catchAsyncErrors( async(req, res, next) => {
   
   });
 
+// Upload product images => /api/v1/admin/products/:id/upload_images
+export const uploadProductImages = catchAsyncErrors(async (req, res) => {
+  let product = await Product.findById(req?.params?.id);
+  if (!product) {
+      return res.status(404).json({ message: "Product not found" });
+  }
+
+  const uploader = async (image) => upload_file(image, "Rabbit/products");
+
+  const urls = await Promise.all(req?.body?.images.map(uploader));
+
+  product.images.push(...urls);
+  await product.save();
+
+  res.status(200).json({
+      product,
+  });
+});
+
+// Delete product image => /api/v1/admin/products/:id/delete_image
+export const deleteProductImage = catchAsyncErrors (async (req, res) => {
+  let product = await Product.findById(req?.params?.id);
+  if (!product) {
+  return next(new ErrorHandler("Product not found", 404));
+  }
+  const isDeleted = await delete_file(req.body.imgId);
+  if (isDeleted) {
+  product.images = product?.images?.filter(
+  (img) => img.public_id !== req.body.imgId
+  )
+  await product?.save();
+  }
+  res.status(200).json({
+  product,
+  });
+  });
+
+
   export const deleteProduct = catchAsyncErrors(async (req, res) => {
     const product= await Product.findById(req?.params?.id);
 
     if (!product) {
       return next(new ErrorHandler('Product is not Found', 404));
+    }
+
+    for (let i = 0; i < product?.images?.length; i++) {
+      await delete_file(product?.images [i].public_id);
     }
     await product.deleteOne();
     res.status(200).json({
@@ -73,6 +116,14 @@ export const getProductDetails = catchAsyncErrors( async(req, res, next) => {
     });
   
   });
+
+ // Get products - ADMIN => /api/v1/admin/products
+export const getAdminProducts = catchAsyncErrors (async (req, res, next) => {
+const products = await Product.find();
+res.status(200).json({
+products,
+});
+});
 
 // Create/Update product review => /api/v1/reviews
 export const createProductReview = catchAsyncErrors(async (req, res, next) => {
@@ -119,7 +170,7 @@ export const createProductReview = catchAsyncErrors(async (req, res, next) => {
 
 // Get product reviews => /api/v1/reviews
 export const getProductReviews = catchAsyncErrors(async (req, res, next) => {
-  const product = await Product.findById(req.query.id);
+  const product = await Product.findById(req.query.id).populate("reviews.user");
   if (!product) {
     return next(new ErrorHandler("Product not found", 404));
   }
